@@ -1,0 +1,78 @@
+.skills {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.skills h1 {
+  color: #d45d8d;
+  margin-bottom: 40px;
+}
+
+
+/* Dans Navbar.css ou Skills.css */
+.app-container.dark .skills {
+  background-color: #333;
+}
+
+.app-container.dark .project-card {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+
+.skills-category {
+  margin-bottom: 40px;
+}
+
+.skills-category h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}

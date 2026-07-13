@@ -1,0 +1,40 @@
+.projects {
+  padding: 80px 50px;
+}
+
+.projects h1 {
+  text-align: center;
+  color: #d45d8d;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+
+
+.project-card {
+  background-color: var(--card-bg); /* Utilise la variable */
+  padding: 25px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Transition douce pour la couleur et le survol */
+  border: 1px solid transparent;
+}
+
+/* Effet au survol (hover) pour les deux modes */
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: #d45d8d; /* Rappel de ta couleur rose */
+}
+
+
+.project-links a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #d45d8d;
+  font-weight: bold;
+  text-decoration: none;
+}
