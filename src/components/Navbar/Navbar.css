@@ -14,7 +14,7 @@
 
 /* Adaptation au mode sombre */
 .app-container.dark .navbar {
-  background-color: #1a1a1a; /* Un gris très foncé, plus élégant que #333 */
+  background-color: #1a1a1a;
   box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
 }
 
@@ -50,11 +50,30 @@
   margin-left: 20px;
 }
 
-/* Optionnel : couleur du texte en mode sombre */
+/* Texte en mode sombre */
 .app-container.dark .nav-menu li {
   color: #ffffff;
 }
 
 .app-container.dark .nav-menu li:hover {
   color: #d45d8d;
+}
+
+/* --- RESPONSIVITÉ (Media Query) --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Empile les éléments verticalement */
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .nav-menu {
+    gap: 15px; /* Réduit l'espace entre les liens sur mobile */
+    flex-wrap: wrap; /* Permet aux liens de passer à la ligne s'il y en a trop */
+    justify-content: center;
+  }
+
+  .nav-theme-toggle {
+    margin-left: 0; /* Centre le bouton de thème */
+  }
 }

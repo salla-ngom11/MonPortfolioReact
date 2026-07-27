@@ -1,7 +1,16 @@
-.contact { padding: 80px 50px; text-align: center; }
-.contact-form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
-.contact-form input, .contact-form textarea { padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
-.contact-form button { padding: 15px; background: #d45d8d; color: white; border: none; cursor: pointer; border-radius: 5px; }
+.contact {
+  padding: 80px 50px;
+  text-align: center;
+  background-color: #ffffff; /* Fond blanc par défaut en mode clair */
+  color: #333333; /* Texte sombre par défaut en mode clair */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Mode sombre pour la section contact */
+.app-container.dark .contact {
+  background-color: #1a1a1a; /* Fond sombre en mode dark */
+  color: #ffffff;
+}
 
 .contact-container {
   max-width: 500px;
@@ -11,6 +20,8 @@
 }
 
 .contact-form {
+  max-width: 500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 15px; /* Espace entre les champs */
@@ -23,11 +34,22 @@
   border-radius: 8px;
   font-size: 16px;
   width: 100%;
+  background-color: #ffffff; /* Fond clair pour les champs */
+  color: #333333; /* Texte des champs en mode clair */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Champs de texte en mode sombre */
+.app-container.dark .contact-form input, 
+.app-container.dark .contact-form textarea {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border-color: #444;
 }
 
 .contact-form button {
   padding: 12px;
-  background-color: #a37095; /* Couleur en accord avec ton portfolio */
+  background-color: #a37095; /* Couleur en accord avec votre portfolio */
   color: white;
   border: none;
   border-radius: 8px;

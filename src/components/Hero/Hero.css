@@ -6,6 +6,15 @@
   padding: 0 50px;
   gap: 40px; /* Espace entre le contenu et l'image */
   margin-bottom: 50px; /* Sépare la section Hero de la section About */
+  background-color: #ffffff; /* Fond blanc par défaut en mode clair */
+  color: #333333; /* Texte sombre par défaut en mode clair */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Mode sombre pour la section hero */
+.app-container.dark .hero {
+  background-color: #1a1a1a; /* Fond sombre en mode dark */
+  color: #ffffff;
 }
 
 .hero-content {
@@ -25,6 +34,20 @@
   font-size: 1.5rem;
   color: #555;
   margin-bottom: 20px;
+}
+
+/* Adaptation du sous-titre en mode sombre si besoin */
+.app-container.dark .hero-content h2 {
+  color: #bbb;
+}
+
+.hero-content p {
+  color: #666; /* Couleur du paragraphe en mode clair */
+  margin-bottom: 20px;
+}
+
+.app-container.dark .hero-content p {
+  color: #ccc; /* Couleur du paragraphe en mode sombre */
 }
 
 .hero-buttons {

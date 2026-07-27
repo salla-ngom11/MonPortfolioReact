@@ -1,5 +1,14 @@
 .projects {
   padding: 80px 50px;
+  background-color: #ffffff; /* Fond blanc par défaut en mode clair */
+  color: #333333; /* Texte sombre par défaut en mode clair */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Mode sombre pour la section projects */
+.app-container.dark .projects {
+  background-color: #1a1a1a; /* Fond sombre en mode dark */
+  color: #ffffff;
 }
 
 .projects h1 {
@@ -14,22 +23,25 @@
   gap: 30px;
 }
 
-
-
 .project-card {
-  background-color: var(--card-bg); /* Utilise la variable */
+  background-color: #f9f9f9; /* Fond clair par défaut pour les cartes */
   padding: 25px;
   border-radius: 15px;
-  transition: transform 0.3s ease, background-color 0.3s ease; /* Transition douce pour la couleur et le survol */
+  transition: transform 0.3s ease, background-color 0.3s ease;
   border: 1px solid transparent;
+}
+
+/* Style des cartes en mode sombre */
+.app-container.dark .project-card {
+  background-color: #2d2d2d; 
+  color: #ffffff;
 }
 
 /* Effet au survol (hover) pour les deux modes */
 .project-card:hover {
   transform: translateY(-10px);
-  border-color: #d45d8d; /* Rappel de ta couleur rose */
+  border-color: #d45d8d; /* Rappel de votre couleur rose */
 }
-
 
 .project-links a {
   display: inline-block;

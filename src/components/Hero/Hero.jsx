@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import profileImg from '../../assets/images/salla.jpeg';
+import profileImg from '../../assets/images/meeeee.jpeg';
 
 const Hero = () => {
   return (
@@ -18,8 +18,8 @@ const Hero = () => {
         
         <div className="hero-buttons">
           {/* Bouton Télécharger CV */}
-          <a href="/Mon CV.pdf" download="CV_Salla_NGOM.pdf" className="btn-primary">
-            Télécharger mon CV
+        <a href="./Mon-CV-Salla.pdf" download="CV_Salla_Ngom.pdf" className="btn-primary">
+          Télécharger mon CV
           </a>
           
          

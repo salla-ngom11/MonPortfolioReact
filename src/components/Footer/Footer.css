@@ -1,13 +1,15 @@
 .footer {
   padding: 40px 20px;
   text-align: center;
-  background-color: #f8f9fa;
-  border-top: 1px solid #e7e7e7;
+  background-color: var(--bg); /* S'adapte au fond global (blanc ou sombre) */
+  color: var(--text);          /* S'adapte à la couleur du texte global */
+  border-top: 1px solid var(--border); /* S'adapte à la couleur des bordures */
   margin-top: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .footer p {
-  color: #666;
+  color: var(--text);          /* Utilise la couleur du texte global */
   margin: 5px 0;
 }
 
@@ -22,7 +24,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #d45d8d;
+  color: #d45d8d;              /* Conserve votre rose ou peut utiliser var(--accent) */
   text-decoration: none;
   font-weight: 600;
 }

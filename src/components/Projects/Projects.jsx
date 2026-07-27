@@ -5,6 +5,12 @@ import './Projects.css';
 const Projects = () => {
   const projectList = [
     {
+      title: "Umu_Sallamata (Baye Niass)",
+      desc: "Site web interactif dédié à la vie, l'enseignement et l'héritage spirituel de Cheikh Ibrahim Niass.",
+      tech: "React, Vite, Tailwind CSS, TypeScript, Vercel",
+      link: "https://baye-niass.vercel.app/"
+    },
+    {
       title: "Saytu Edu (PFE)",
       desc: "Plateforme éducative pour la gestion scolaire. (Projet réalisé en groupe)",
       tech: "Laravel, PHP, MySQL, React",

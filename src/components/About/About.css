@@ -1,6 +1,8 @@
 .about {
   padding: 80px 50px;
-  background-color: #f9f9f9;
+  background-color: var(--bg); /* Utilise la variable globale de fond */
+  color: var(--text);          /* Utilise la variable globale de texte */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .about h1 {
@@ -14,5 +16,5 @@
   margin: 0 auto;
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #444;
+  color: var(--text);          /* S'adapte aussi au texte global */
 }
